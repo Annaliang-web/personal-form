@@ -1,0 +1,42 @@
+
+body{
+  margin: 0 auto;
+}
+
+.form-container{
+  width: 55%;
+  height: 100%;
+  margin: 0 20%;
+  /* background-color: #f58447f6; */
+  background-color: #f8dadbf3;
+}
+th{
+  font-size: 1.4em;
+}
+td{
+  color: #4f5668;
+}
+
+.bold{
+  font-weight: bold;
+  padding-left: 3%;
+}
+
+::-webkit-input-placeholder {
+  color: #4f5668;
+}
+
+:placeholder-shown{
+  color: #4f5668;
+}
+
+.option-color{
+  color: #4f5668;
+}
+td.buttons{
+  padding-left: 3%;
+}
+
+h3{  /*thank you*/
+ text-align: center;
+}

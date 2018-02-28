@@ -1,0 +1,82 @@
+<!-- Contact Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http-form.js"></script>
+    <title>Submit HTTP Form</title>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- <form action="http://httpbin.org/post" method="POST" id="contactForm">return json file -->
+        <form action="thankyou.html" method="POST" id="contactForm"> <!-- return Thank you page -->
+            <div class="form-group form-container col s12 m2">
+              <table class="z-depth-4">
+                <tr><th></th><th class="text-center">HTTP and Forms with JQuery</th><th></th></tr>
+                <tr>
+                  <td class="bold">First Name:</td> 
+                  <td><input type="text" name="first_name" id="firstname"></td>
+                  <td><span id="errorFirst"></span></td>
+                </tr> 
+                <tr>
+                <td class="bold">Last Name:</td>
+                <td><input type="text" name="last_name" id="lastname"></td>
+                <td><span id="errorLast"></span></td>
+                </tr>
+                <tr>
+                  <td class="bold">Date of Birth:</td>
+                  <td><input type="date" id="date"></td>
+                  <td><span id="errorDate"></span></td>
+                </tr>
+                <tr>
+                  <td class="bold">Full Address:</td>
+                  <td><input type="text" name="address" id="address"></td>
+                </tr>
+                  <td class="bold">Email:</td>
+                  <td><input type="email" name="email" id="email"></td>
+                  <td><span id="errorEmail"></span></td>
+                <tr>
+                  <td class="bold">Phone:</td>
+                  <td><input type="tel" name="phone" id="phone"></td>
+                  <td><span id="errorPhone"></span></td>
+                  <td><span id="nonNumber"></span></td>
+                </tr>
+                <tr>
+                  <td class="bold">Message:</td>
+                  <td><textarea type='text' name="message" id="textarea1" class="materialize-textarea" 
+                       data-length="120" placeholder="Please leave your message..."></textarea></td>
+                </tr>  
+                <tr>
+                  <td class="bold">Favourite Colour:</td>
+                  <td id="red-margin">
+                    <input type="checkbox" id="red">
+                    <label for="red" class="option-color">Red</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="green">
+                    <label for="green" class="option-color">Green</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="blue">
+                    <label for="blue" class="option-color">Blue</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>                 
+                </tr> 
+                <tr>
+                  <!-- <td class="push-button"></td>   -->
+                  <td class="buttons">
+                    <button id="clearForm" class="btn waves-effect waves-light" name="action">Clear</button>
+                    <button type="submit" class="btn waves-effect waves-light" name="action">Submit <i class="material-icons right">send</i></button>  
+                  </td>
+                </tr>
+            </table>    
+    </div>
+    </form>
+    </div>
+    
+</body>
+</html>
